@@ -39,17 +39,27 @@ namespace NumberParser
         {
             public static int[] sortArry(string fileData)
             {
-                var ArrayList = new List<int>();
+                var ArrayList = new List<int>();// for not declaring a specific list 
                 foreach (var item in fileData.Split(','))
                 {
                     ArrayList.Add(Convert.ToInt32(item));
                 }
 
                 int[] terms = ArrayList.ToArray();
-
-
-                Array.Sort(terms);
-                Array.Reverse(terms);
+                int i, j, temp;
+                for (i = 0; i < terms.Length; i++)
+                {
+                    for (j = i + 1; j < 5; j++)
+                    {
+                        if (terms[i] < terms[j])
+                        {
+                            temp = terms[i];
+                            terms[i] = terms[j];
+                            terms[j] = temp;
+                        }
+                    }
+                }                
+               
                 return terms;
             }
             public static IFile GetFileCreatorClass(string FileType, int[] fileData)
