@@ -10,20 +10,28 @@ namespace NumberParser
         {
             Console.Write("NumberParser :");
             var input = Console.ReadLine();
-            string fileType = input.Substring(input.LastIndexOf(',') + 1);
-            var fileDataRaw = input.Substring(0, input.LastIndexOf(","));
-
-            int[] fileData = FileFactory.sortArry(fileDataRaw);
-            IFile fileInstance = FileFactory.GetFileCreatorClass(fileType.ToLower(), fileData);
-
-            if (fileInstance != null)
+           
+            try
             {
-                fileInstance.FileCreator();
-                Console.WriteLine("Operation Succeesfull");
+                string fileType = input.Substring(input.LastIndexOf(',') + 1);
+                var fileDataRaw = input.Substring(0, input.LastIndexOf(","));
+                int[] fileData = FileFactory.sortArry(fileDataRaw);
+                IFile fileInstance = FileFactory.GetFileCreatorClass(fileType.ToLower(), fileData);
+
+                if (fileInstance != null)
+                {
+                    fileInstance.FileCreator();
+                    Console.WriteLine("Operation Completed Successfully");
+                }
+                else
+                {
+                    Console.WriteLine("File Type Not found");
+                }
             }
-            else
+            catch(Exception ex)
             {
-                Console.WriteLine("File Type Not found");
+                Console.WriteLine("Exception Occured while processing your request.{0}" +Environment.NewLine, ex.Message);
+                Console.Read();
             }
 
         }
