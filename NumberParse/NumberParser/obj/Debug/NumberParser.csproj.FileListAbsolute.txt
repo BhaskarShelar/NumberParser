@@ -1,0 +1,10 @@
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\bin\Debug\NumberParser.exe.config
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\bin\Debug\NumberParser.exe
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\bin\Debug\NumberParser.pdb
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\bin\Debug\Newtonsoft.Json.dll
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\bin\Debug\Newtonsoft.Json.xml
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\obj\Debug\NumberParser.csprojAssemblyReference.cache
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\obj\Debug\NumberParser.csproj.CoreCompileInputs.cache
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\obj\Debug\NumberParser.csproj.CopyComplete
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\obj\Debug\NumberParser.exe
+D:\Bhaskar shelar\Inteview Task\25 11 2019\NumberParse\NumberParser\obj\Debug\NumberParser.pdb
