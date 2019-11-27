@@ -49,7 +49,7 @@ namespace NumberParser
                 int i, j, temp;
                 for (i = 0; i < terms.Length; i++)
                 {
-                    for (j = i + 1; j < 5; j++)
+                    for (j = i + 1; j < terms.Length; j++)
                     {
                         if (terms[i] < terms[j])
                         {
